@@ -50,19 +50,19 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main className={inter.className}>
-        <div className="">
+        <div className="my-20 lg:my-0">
           <div className="flex flex-col items-center justify-center">
-            <h1 className="text-5xl font-bold text-center py-10 text-white">
+            <h1 className="w-5/6 lg:text-5xl text-3xl font-bold text-center py-10 text-white">
               Welcome to BrainstormAI
             </h1>
-            <p className="text-lg w-[500px] text-teal-300">
+            <p className="w-5/6 text-sm lg:text-lg lg:w-[500px] text-teal-300">
               Welcome to our chatbot app! Our GPT-3.5-powered chatbot is here to
               assist you and provide personalized responses to your queries. So
               what are you waiting for? Say hello and let&apos;s start a
               conversation!
             </p>
             <div>
-              <div className="w-96 h-[500px] border border-gray-600 bg-gray-800 mt-10 rounded-lg overflow-y-scroll">
+              <div className="w-80 lg:w-96 h-[500px] border border-gray-600 bg-gray-800 mt-10 rounded-lg overflow-y-scroll">
                 <ul className="m-2 p-2 rounded flex flex-col-reverse gap-5">
                   {chat &&
                     chat
@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <form
                 onSubmit={handleSubmit}
-                className="w-96 h-12 px-2 border border-gray-700 bg-gray-800 mt-5 rounded-full flex items-center justify-between"
+                className="w-80 lg:w-96 h-12 px-2 border border-gray-700 bg-gray-800 mt-5 rounded-full flex items-center justify-between"
               >
                 {disabled && (
                   <SyncLoader className="text-sm" color="teal" size={7} />
