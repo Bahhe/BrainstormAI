@@ -79,7 +79,7 @@ export default function Home() {
               </div>
               <form
                 onSubmit={handleSubmit}
-                className="w-96 h-12 px-2 mb-72 border border-gray-700 bg-gray-800 mt-5 rounded-full flex items-center justify-between"
+                className="w-96 h-12 px-2 border border-gray-700 bg-gray-800 mt-5 rounded-full flex items-center justify-between"
               >
                 {disabled && (
                   <SyncLoader className="text-sm" color="teal" size={7} />
