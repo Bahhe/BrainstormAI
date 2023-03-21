@@ -18,7 +18,7 @@ export default function Home() {
     setDisabled(true);
     const warningMsg = setTimeout(() => {
       setWarning(true);
-    }, 10000);
+    }, 15000);
     e.preventDefault();
     const question = inputValue;
     setChat((prev) => [...prev, question]);
@@ -53,7 +53,7 @@ export default function Home() {
         <div className="my-20 lg:my-0">
           <div className="flex flex-col items-center justify-center">
             <h1 className="w-5/6 lg:text-5xl text-3xl font-bold text-center py-10 text-white">
-              Welcome to BrainstormAI
+              BrainstormAI
             </h1>
             <p className="w-5/6 text-sm lg:text-lg lg:w-[500px] text-teal-300">
               Welcome to our chatbot app! Our GPT-3.5-powered chatbot is here to
@@ -62,7 +62,7 @@ export default function Home() {
               conversation!
             </p>
             <div>
-              <div className="w-80 lg:w-96 h-[500px] border border-gray-600 bg-gray-800 mt-10 rounded-lg overflow-y-scroll">
+              <div className="w-80 lg:w-96 h-[500px] border border-gray-600 bg-gray-800 mt-10 rounded-lg overflow-y-auto">
                 <ul className="m-2 p-2 rounded flex flex-col-reverse gap-5">
                   {chat &&
                     chat
